@@ -11,13 +11,15 @@ body {
 /* タイトル（大きめ） */
 h1 {
   margin-top: 60px;
-  font: bold 28px "Meiryo", sans-serif;
+  font-family: "Meiryo", sans-serif;
+  font-weight: 800;   /* ← 太字 */
+  font-size: 28px;
   color: #111;
 }
 
-/* サブタイトル／担当者名（h1の下に小さく） */
-.subtitle,
-.teacher {
+/* サブタイトル（名前など）を中央寄せに */
+.subtitle {
+  text-align: center;
   color: #555;
   font-size: 16px;
   margin: 6px 0 22px;
@@ -25,10 +27,11 @@ h1 {
 
 /* 本文（中央寄せ・幅を揃える） */
 p {
-  margin: 0 auto 16px;
+   margin: 0 auto 16px;
   width: 80%;
   max-width: 760px;
   text-align: center;
+  font-weight: 400; 
 }
 
 /* 戻るリンク */
